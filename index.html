@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <header class="cabecera">
+    <nav class="menu">
+      <ul>
+        <li><a href="#sobre-ella">Sobre ella</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <h1>Rachel Goswell</h1>
+    <p>Vocalista y guitarrista de SLowdive.</p>
+  </header>
+  <body>
+    <main>
+      <section class="tarjeta" id="sobre-mi">
+        <img src="img/rachel.jpg" alt="Mi foto" class="foto" />
+        <h2>Sobre Rachel</h2>
+        <p>Vocalista y guitarrista de Slowdive.</p>
+        <section class="tarjeta" id="habilidades">
+          <h2>Participación</h2>
+          <ul class="lista-habilidades">
+            <li>Voz sensorial</li>
+            <li>Segunda guitarrista</li>
+            <li>Voz en "Sing"</li>
+          </ul>
+        </section>
+        <section class="tarjeta" id="servicios">
+          <h2>Habilidades</h2>
+          <div class="fila">
+            <article class="mini-tarjeta">
+              <h3>Páginas web</h3>
+              <p>Sitios informativos claros y ordenados.</p>
+            </article>
+            <article class="mini-tarjeta">
+              <h3>Diseño adaptable</h3>
+              <p>Páginas que se ven bien en el celular.</p>
+            </article>
+            <article class="mini-tarjeta">
+              <h3>Mantenimiento</h3>
+              <p>Actualización de textos e imágenes.</p>
+            </article>
+          </div>
+        </section>
+
+        <a href="#contacto" class="boton">Contáctame</a>
+        <a href="#proyectos" class="boton boton-secundario">Ver proyectos</a>
+      </section>
+      <section class="tarjeta" id="contacto">
+        <h2>Contacto</h2>
+        <form class="formulario">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" required />
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          <button type="submit" class="boton">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer class="pie">
+      <p>&copy; 2026 Rachel Goswell</p>
+    </footer>
+  </body>
+</html>

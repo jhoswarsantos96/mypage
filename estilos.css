@@ -1,0 +1,194 @@
+/* 1. Declarar en :root */
+:root {
+  --fondo: #f4f6fa;
+  --primario: #8c721b;
+  --acento: #00c0b6;
+}
+/* 2. Usar con var() */
+.boton {
+  background-color: var(--acento);
+}
+
+/* 1. Variables: paleta del sitio */
+:root {
+  --primario: #1b4f8c;
+  --fondo: #f4f6fa;
+  --texto: #020000;
+  --acento: #e98962;
+  --borde: #dde3ec;
+}
+/* 2. Reinicio y estilos generales */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+p {
+  color: #030a13;
+  font-size: 20px;
+}
+
+.cabecera {
+  background-color: var(--primario);
+  color: var(--fondo);
+  padding: 48px 24px;
+  text-align: center;
+}
+.tarjeta {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: white;
+  border: 1px solid var(--borde);
+  border-radius: 16px;
+}
+
+.foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--primario);
+}
+.tarjeta h2 {
+  margin-top: 16px;
+  color: var(--primario);
+}
+.pie {
+  padding: 24px;
+  text-align: center;
+}
+
+.boton {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 8px 8px 0 0;
+  border: 2px solid var(--acento);
+  border-radius: 8px;
+  background-color: var(--acento);
+  color: white;
+  text-decoration: none;
+}
+.boton-secundario {
+  background-color: transparent;
+  color: var(--acento);
+}
+.boton:hover {
+  opacity: 0.85;
+}
+
+/* Navegación */
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+.menu a {
+  color: var(--fondo);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+.lista-habilidades li {
+  padding: 0.5rem 1rem;
+  background-color: var(--fondo);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+}
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.625rem;
+  margin-top: 0.375rem;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  font: inherit;
+}
+.formulario label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: 2px solid var(--primario);
+  border-color: transparent;
+}
+.formulario button {
+  margin-top: 1.25rem;
+  cursor: pointer;
+}
+body {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+h1,
+h2 {
+  font-family: "Poppins", Arial, sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+.cabecera p {
+  font-size: 1.125rem;
+}
+.tarjeta {
+  width: 90%;
+}
+/* 12. Servicios */
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.mini-tarjeta {
+  flex: 1 1 180px;
+  padding: 1.25rem;
+  background-color: var(--fondo);
+  border-radius: 12px;
+}
+.mini-tarjeta h3 {
+  margin-top: 0;
+}
+
+.boton {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+.boton:hover {
+  transform: translateY(-2px);
+}
+.mini-tarjeta {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.mini-tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+.menu a:hover {
+  text-decoration: underline;
+}

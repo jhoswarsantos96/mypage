@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dante Sparda · Devil May Cry</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <!-- Paso 1: menú de navegación con Flexbox -->
+    <nav class="menu">
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#servicios">Armas</a></li>
+        <li><a href="#formacion">Apariciones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Reto: la foto lleva la clase "foto" (hover con scale y transition) -->
+    <img class="foto" src="dante/dante.jpg" alt="Dante Sparda, cazador de demonios">
+    <h1>Dante Sparda</h1>
+    <p>Cazador de demonios · Devil May Cry</p>
+  </header>
+
+  <main>
+
+    <section class="tarjeta" id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy Dante, mitad humano y mitad demonio. Hijo del legendario caballero
+        demonio Sparda y de la humana Eva, y hermano gemelo de Vergil.
+        Dirijo mi propio negocio, Devil May Cry, donde me dedico a cazar
+        demonios. Me gustan la pizza, los helados de fresa y entrar a la
+        batalla con estilo.
+      </p>
+    </section>
+
+    <!-- Paso 2: habilidades como etiquetas -->
+    <section class="tarjeta" id="habilidades">
+      <h2>Habilidades</h2>
+      <ul class="lista-habilidades">
+        <li>Devil Trigger</li>
+        <li>Esgrima con espada</li>
+        <li>Tiro con pistolas</li>
+        <li>Combates acrobáticos</li>
+        <li>Humor sarcástico</li>
+      </ul>
+    </section>
+
+    <!-- Paso 3 + Reto: fila de tarjetas con una CUARTA tarjeta -->
+    <section class="tarjeta" id="servicios">
+      <h2>Mi arsenal</h2>
+      <div class="fila">
+        <article class="mini-tarjeta">
+          <h3>Rebellion</h3>
+          <p>Mi espada principal, una gran arma de filo heredada de mi padre.</p>
+        </article>
+        <article class="mini-tarjeta">
+          <h3>Ebony &amp; Ivory</h3>
+          <p>Mis pistolas gemelas, rápidas y precisas.</p>
+        </article>
+        <article class="mini-tarjeta">
+          <h3>Cerberus</h3>
+          <p>Un nunchaku de hielo para combatir a los enemigos de cerca.</p>
+        </article>
+        <article class="mini-tarjeta">
+          <h3>Agni &amp; Rudra</h3>
+          <p>Espadas gemelas de fuego y viento, ideales para ataques veloces.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="tarjeta" id="formacion">
+      <h2>Apariciones</h2>
+      <ul>
+        <li>Devil May Cry (2001)</li>
+        <li>Devil May Cry 2 (2003)</li>
+        <li>Devil May Cry 3: Dante's Awakening (2005)</li>
+        <li>Devil May Cry 4 (2008)</li>
+        <li>Devil May Cry 5 (2019)</li>
+      </ul>
+    </section>
+
+    <section class="tarjeta" id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Demonios en tu vecindario? Llama a Devil May Cry.</p>
+      <p>Correo: <a href="mailto:dante@devilmaycry.com">dante@devilmaycry.com</a></p>
+      <a class="boton" href="mailto:dante@devilmaycry.com">Contratar a Dante</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Página de fans · Dante y Devil May Cry son propiedad de Capcom</p>
+  </footer>
+
+</body>
+</html>

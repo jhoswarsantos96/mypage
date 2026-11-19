@@ -1,0 +1,176 @@
+/* ==========================================================
+   Portafolio de Dante Sparda · Sesión 4
+   Orden del archivo:
+   1. Variables   2. Base   3. Cabecera   4. Foto   5. Tarjetas
+   6. Botón   7. Habilidades   8. Listas   9. Pie
+   11. Menú   12. Servicios   13. Transiciones y efectos
+   ========================================================== */
+
+/* 1. Variables */
+:root {
+  --fondo: #f3f4f6;
+  --borde: #d1d5db;
+  --texto: #1f1f24;
+  --principal: #14141a;
+  --acento: #ff4d57;
+}
+
+/* 2. Base */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: var(--texto);
+  background-color: var(--fondo);
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* 3. Cabecera */
+header {
+  padding: 1.5rem 1rem 2.5rem;
+  text-align: center;
+  color: var(--fondo);
+  background-color: var(--principal);
+}
+
+header h1 { margin: 0.75rem 0 0.25rem; }
+header p  { margin: 0; }
+
+/* 4. Foto */
+.foto {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--acento);
+}
+
+/* 5. Tarjetas */
+.tarjeta {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.tarjeta h2 { margin-top: 0; color: #b3121d; }
+
+/* 6. Botón */
+.boton {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  color: #ffffff;
+  background-color: #b3121d;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.boton:hover { opacity: 0.85; }
+
+/* 7. Habilidades */
+.lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+}
+
+.lista-habilidades li {
+  padding: 0.5rem 1rem;
+  background-color: var(--fondo);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+}
+
+/* 8. Listas */
+#formacion ul { padding-left: 1.25rem; }
+
+/* 9. Pie */
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--fondo);
+  background-color: var(--principal);
+}
+
+footer p { margin: 0; }
+
+/* 11. Menú de navegación */
+.menu ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.menu a {
+  color: var(--fondo);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* 12. Servicios (ahora con cuatro tarjetas) */
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.mini-tarjeta {
+  flex: 1 1 180px;
+  padding: 1.25rem;
+  background-color: var(--fondo);
+  border-radius: 12px;
+}
+
+.mini-tarjeta h3 { margin-top: 0; }
+
+/* 13. Transiciones y efectos */
+.boton {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+}
+
+.mini-tarjeta {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mini-tarjeta:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Reto 1: la transition va en el estado normal, el scale en :hover */
+.foto {
+  transition: transform 0.3s ease;
+}
+
+.foto:hover {
+  transform: scale(1.05);
+}
+
+/* Reto 2: transición suave del color de los enlaces del menú */
+.menu a {
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--acento);
+  text-decoration: underline;
+}
